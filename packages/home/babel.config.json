@@ -4,16 +4,13 @@
        "corejs": 3
     }],
     [
-      "@zzf-babel/plugins/lib/babel-plugin-then-catch",
+      "@zzf-babel/plugins/lib/babel-plugin-import",
       {
-        "ignore": [
-          "time"
-        ]
+        "lib": "foo"
       }
     ]
   ],
   "presets": [
-    "@zzf-babel/presets/lib/presets",
     [
       "@babel/preset-env",
       {
