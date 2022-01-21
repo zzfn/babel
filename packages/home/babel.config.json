@@ -1,8 +1,11 @@
 {
   "plugins": [
-    ["@babel/plugin-transform-runtime",{
-       "corejs": 3
-    }],
+    [
+      "@babel/plugin-transform-runtime",
+      {
+        "corejs": 3
+      }
+    ],
     [
       "@zzf-babel/plugins/lib/babel-plugin-import",
       {
@@ -14,10 +17,15 @@
     [
       "@babel/preset-env",
       {
+        "useBuiltIns": false,
         "modules": false,
-        "useBuiltIns": "usage",
-        "corejs": "3",
-        "targets": "> 0.25%, not dead"
+        "targets": {
+          "browsers": [
+            "> 1%",
+            "last 2 versions",
+            "not dead"
+          ]
+        }
       }
     ]
   ]
