@@ -1,7 +1,11 @@
 {
   "name": "root",
   "private": true,
+  "scripts": {
+    "clean": "rm -rf node_modules packages/**/node_modules"
+  },
   "devDependencies": {
+    "@babel/runtime-corejs3": "^7.14.9",
     "lerna": "^4.0.0"
   }
 }
